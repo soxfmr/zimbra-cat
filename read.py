@@ -84,8 +84,9 @@ def main():
     print '=============== {} ==============='.format(remotefile)
 
     for i in range(len(filedata)):
-        filedata[i] = line.replace('\\"', '"')
-        print filedata[i]
+        line = filedata[i].replace('\\"', '"')
+        filedata[i] = line
+        print line
 
     # Save file
     if saved:
