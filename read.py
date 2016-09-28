@@ -45,7 +45,7 @@ def zimbra_cat(url, remotefile):
 
         # Do the trick, skip the first keyword
         data = text[300:]
-        start = data.find('a=I18nMsg;')
+        start = data.find(TAG_START)
         if not start:
             return False
 
