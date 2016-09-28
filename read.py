@@ -1,5 +1,5 @@
 '''
-Copyright [2016] [soxfmr@foxmail.com]
+Copyright 2016 soxfmr@foxmail.com
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -86,6 +86,7 @@ def main():
     for i in range(len(filedata)):
         line = filedata[i].replace('\\"', '"')
         filedata[i] = line
+
         print line
 
     # Save file
